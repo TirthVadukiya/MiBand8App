@@ -31,9 +31,9 @@ const Home = ({navigation}) => {
       if (navigation.isFocused()) {
         Alert.alert('Hold on!', 'Are you sure you want to go back?', [
           {
-            text: 'Cancel',
+            text: 'NO',
             onPress: () => null,
-            style: 'cancel',
+            style: 'No',
           },
           {text: 'YES', onPress: () => BackHandler.exitApp()},
         ]);
@@ -99,7 +99,6 @@ const Home = ({navigation}) => {
         <TouchableOpacity onPress={() => navigation.openDrawer()}>
         <Image source={require("../../../assets/Images/iconDrawer.png")} style={{resizeMode:"contain",height:20,}} />
         </TouchableOpacity>
-      {/* <Icon name={"dots-vertical"} size={30} color={"white"} style={{right:50}} onPress={() => navigation.openDrawer()}/> */}
         <Text style={styles.headerTxt}>Mi Band 8 Watch Faces</Text>
       
       </View>

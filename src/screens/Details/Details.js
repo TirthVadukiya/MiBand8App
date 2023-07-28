@@ -6,7 +6,8 @@ import {
   TouchableOpacity,
   PermissionsAndroid,
   Platform,
-  StatusBar
+  StatusBar,
+  ScrollView
 } from 'react-native';
 import React, {useEffect, useState} from 'react';
 import styles from '.';
@@ -98,7 +99,7 @@ const Details = ({route,navigation}) => {
      />
 
       {/* WatchImg */}
-
+     <ScrollView>
       <View style={styles.watchView}>
         <ImageBackground
           source={require('../../../assets/Images/wfback.png')}
@@ -135,6 +136,7 @@ const Details = ({route,navigation}) => {
       <TouchableOpacity style={styles.DownLoadBtn} onPress={downloadFile}>
         <Text style={styles.BtnTxt}>{value}</Text>
       </TouchableOpacity>
+      </ScrollView>
     </View>
   );
 };
