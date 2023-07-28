@@ -8,6 +8,35 @@
   "client": [
     {
       "client_info": {
+        "mobilesdk_app_id": "1:630847485412:android:7edf8ee13413b5fa1e43f1",
+        "android_client_info": {
+          "package_name": "com.miwatcheight"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "630847485412-mvktl8cn643nhhgt2f4ohefnvvdo0stm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBljtOzqkYwUUP894vlU1_LiJTf7BlB8Vk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "630847485412-mvktl8cn643nhhgt2f4ohefnvvdo0stm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:630847485412:android:7ad41c87df8911b61e43f1",
         "android_client_info": {
           "package_name": "com.watchfacesapp"

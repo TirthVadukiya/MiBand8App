@@ -1,8 +1,5 @@
 import React from 'react';
-import {
-  DrawerContentScrollView,
- 
-} from '@react-navigation/drawer';  
+import {DrawerContentScrollView} from '@react-navigation/drawer';
 import {
   Alert,
   StyleSheet,
@@ -10,17 +7,18 @@ import {
   Text,
   TouchableOpacity,
   Image,
-  Share
+  Share,
+  Linking
 } from 'react-native';
-import Icon from 'react-native-vector-icons/Ionicons'
+import Icon from 'react-native-vector-icons/Ionicons';
+import Icons from 'react-native-vector-icons/Feather';
 
 function CustomDrawer({props, navigation}) {
-
   const onShare = async () => {
     try {
       const result = await Share.share({
         message:
-          'React Native | A framework for building native apps using React',
+          'Mi Band Watch Faces App, https://play.google.com/store/apps/details?id=com.miwatcheight ',
       });
       if (result.action === Share.sharedAction) {
         if (result.activityType) {
@@ -36,48 +34,78 @@ function CustomDrawer({props, navigation}) {
     }
   };
 
-
+  const Rate =()=> {
+    return (
+      Linking.openURL(`market://details?id=${"com.miwatcheight"}`).catch(err =>
+      alert('Please check for the Google Play Store')
+    )
+    )
+  }
 
   return (
-    <DrawerContentScrollView style={{backgroundColor: 'black'}} {...props} showsVerticalScrollIndicator={false}>
+    <DrawerContentScrollView
+      style={{backgroundColor: '#232020', flex: 1}}
+      {...props}
+      showsVerticalScrollIndicator={false}>
       {/* Profile Detail */}
-     
-   
-    
+
+      <View style={{marginTop: 20}}>
+        <Image
+          source={require('../../assets/Images/MiBand.png')}
+          style={styles.WatchImg}
+        />
+      </View>
+
+      <View
+        style={{
+          height: 1,
+          width: '83%',
+          backgroundColor: '#f5f5f5',
+          margin: 20,
+        }}></View>
 
       {/* DrawerTabScreen */}
 
       <View style={{padding: 18, flex: 1}}>
-        <TouchableOpacity style={{marginBottom: 10,flexDirection:"row",alignItems:'center',justifyContent:'space-evenly',right:50}} onPress={onShare}>
-            <Icon name={'share-social'} size={20} color={"white"}/>
+        <TouchableOpacity style={styles.BtnView} onPress={onShare}>
+          <Icon name={'share-social'} size={20} color={'white'} />
           <Text style={styles.DrawerTxt}>Share App</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={{marginBottom: 10}} >
+        <TouchableOpacity style={styles.BtnView} onPress={Rate}>
+          <Icon name={'star-outline'} size={20} color={'white'} />
           <Text style={styles.DrawerTxt}>Rate App</Text>
-          <Icon name={'share-social'} size={20} color={"white"}/>
         </TouchableOpacity>
 
-        <TouchableOpacity style={{marginBottom: 10}} >
+        <TouchableOpacity style={styles.BtnView}>
+          <Icons name={'plus'} size={20} color={'white'} />
           <Text style={styles.DrawerTxt}>More App</Text>
         </TouchableOpacity>
-
       </View>
-
-   
-     
     </DrawerContentScrollView>
   );
 }
 
 const styles = StyleSheet.create({
- 
   DrawerTxt: {
     color: 'white',
     fontWeight: '600',
-    fontFamily: 'Raleway-Medium',
+    fontFamily: 'Poppins-Regular',
+    fontSize:15
+
   },
- 
+  BtnView: {
+    marginBottom: 10,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-evenly',
+    right: 50,
+    margin: 15,
+  },
+  WatchImg: {
+    resizeMode: 'contain',
+    height: 250,
+  },
 });
 
 export default CustomDrawer;

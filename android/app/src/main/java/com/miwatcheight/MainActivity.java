@@ -1,4 +1,4 @@
-package com.watchfacesapp;
+package com.miwatcheight;
 
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;

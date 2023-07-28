@@ -1,4 +1,4 @@
-package com.watchfacesapp;
+package com.miwatcheight;
 
 import android.app.Application;
 import com.facebook.react.PackageList;

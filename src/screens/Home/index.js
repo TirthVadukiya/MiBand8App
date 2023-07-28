@@ -7,7 +7,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'black',
   },
   headerView: {
-    backgroundColor:"#232020",height:50,justifyContent:"center",flexDirection:"row",alignItems:"center"
+    backgroundColor:"#232020",height:50,flexDirection:'row',alignItems:"center"
   },
   headerTxt : {
     fontSize: 20,color:"white",fontFamily:"Poppins-Regular",

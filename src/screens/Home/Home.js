@@ -96,7 +96,10 @@ const Home = ({navigation}) => {
       {/* HeaderBar */}
 
       <View style={styles.headerView}>
-      <Icon name={"dots-vertical"} size={30} color={"white"} style={{right:50}} onPress={() => navigation.openDrawer()}/>
+        <TouchableOpacity onPress={() => navigation.openDrawer()}>
+        <Image source={require("../../../assets/Images/iconDrawer.png")} style={{resizeMode:"contain",height:20,}} />
+        </TouchableOpacity>
+      {/* <Icon name={"dots-vertical"} size={30} color={"white"} style={{right:50}} onPress={() => navigation.openDrawer()}/> */}
         <Text style={styles.headerTxt}>Mi Band 8 Watch Faces</Text>
       
       </View>
