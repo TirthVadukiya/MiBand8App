@@ -1,4 +1,4 @@
-import { View, Text, ImageBackground,Image,ActivityIndicator } from 'react-native'
+import { View, Text, ImageBackground,Image,ActivityIndicator,StatusBar } from 'react-native'
 import React, {useEffect} from 'react'
 import styles from '.';
 
@@ -12,6 +12,7 @@ const Splash = ({navigation}) => {
 
   return (
     <View style={styles.main}>
+      <StatusBar backgroundColor="black" barStyle="light-content" />
         <View style={styles.ImgView}>
        <Image source={require("../../../assets/Images/MiBand.png")} style={styles.SplashImg}/>
        </View>
