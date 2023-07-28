@@ -84,7 +84,7 @@ const Home = ({navigation}) => {
           <TouchableOpacity
             style={styles.WatchBtn}
             onPress={() => navigation.navigate('Details', {data: item})}>
-            <Text style={{fontWeight: 'bold', color: 'white'}}>GET WATCH</Text>
+            <Text style={{textAlign:"center", color: 'white',fontFamily:"Poppins-Regular"}}>GET WATCH</Text>
           </TouchableOpacity>
         </TouchableOpacity>
       </View>

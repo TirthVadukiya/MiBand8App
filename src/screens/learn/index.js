@@ -13,7 +13,7 @@ const styles = StyleSheet.create ({
     headerTxt : {
       fontSize: 20,color:"white",fontFamily:"Poppins-Regular"
     },
-    InstallTxt :{
+      InstallTxt :{
       textAlign:"justify",
       fontSize:15,
       fontFamily:"Poppins-Regular",

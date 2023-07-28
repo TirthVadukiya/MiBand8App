@@ -47,6 +47,7 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: '600',
     left: 10,
+    fontFamily:"Poppins-Regular"
   },
   WatchTxt1: {
     color: 'white',
@@ -87,6 +88,7 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: '700',
     textAlign: 'center',
+    fontFamily: "poppins-Regular"
   },
 });
 
