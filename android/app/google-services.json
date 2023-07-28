@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "630847485412",
+    "firebase_url": "https://watch-faces-77882-default-rtdb.firebaseio.com",
+    "project_id": "watch-faces-77882",
+    "storage_bucket": "watch-faces-77882.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:630847485412:android:7ad41c87df8911b61e43f1",
+        "android_client_info": {
+          "package_name": "com.watchfacesapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "630847485412-mvktl8cn643nhhgt2f4ohefnvvdo0stm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBljtOzqkYwUUP894vlU1_LiJTf7BlB8Vk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "630847485412-mvktl8cn643nhhgt2f4ohefnvvdo0stm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
