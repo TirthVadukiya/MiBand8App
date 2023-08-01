@@ -12,13 +12,6 @@ import {
   SafeAreaView
 } from 'react-native';
 import React, {useEffect, useState, useRef} from 'react';
-import {
-  Menu,
-  MenuProvider,
-  MenuOptions,
-  MenuOption,
-  MenuTrigger,
-} from 'react-native-popup-menu';
 import styles from '.';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import database, {FirebaseDatabaseTypes} from '@react-native-firebase/database';
@@ -30,7 +23,7 @@ const Home = ({navigation}) => {
   useEffect(() => {
     const backAction = () => {
       if (navigation.isFocused()) {
-        Alert.alert('Hold on!', 'Are you sure you want to go back?', [
+        Alert.alert('', 'Are you sure you want to exit?', [
           {
             text: 'NO',
             onPress: () => null,
