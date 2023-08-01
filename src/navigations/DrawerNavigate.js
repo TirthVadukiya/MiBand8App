@@ -11,7 +11,7 @@ const Drawer = createDrawerNavigator();
 function DrawerNavigate() {
   return (
     <Drawer.Navigator screenOptions={{headerShown:false}} drawerContent={(props) => <CustomDrawer {...props} />}>
-      <Drawer.Screen name="Home" component={Home} />
+      <Drawer.Screen name="Home" component={Home}  options={{animation: 'slide_from_right'}}/>
     </Drawer.Navigator>
   );
 }

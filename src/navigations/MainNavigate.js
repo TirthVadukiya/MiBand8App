@@ -16,10 +16,10 @@ const MainNavigate = () => {
     <NavigationContainer>
          <stack.Navigator screenOptions={{headerShown:false}} initialRouteName={Splash}>
             <stack.Screen name='Splash' component={Splash} />
-            <stack.Screen name='mainHome' component={DrawerNavigate}/>
+            <stack.Screen name='mainHome' component={DrawerNavigate} options={{animation: 'slide_from_right'}}/>
             {/* <stack.Screen name='Home' component={Home}/> */}
-            <stack.Screen name='Details' component={Details}/>
-            <stack.Screen name='Learn'  component={Learn}/>
+            <stack.Screen name='Details' component={Details} options={{animation: 'slide_from_right'}}/>
+            <stack.Screen name='Learn'  component={Learn} options={{animation: 'slide_from_right'}}/>
          </stack.Navigator>
     </NavigationContainer>
   )

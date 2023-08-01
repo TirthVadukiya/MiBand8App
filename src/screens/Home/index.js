@@ -1,10 +1,10 @@
 import React from 'react';
-import {StyleSheet} from 'react-native';
+import {StyleSheet,Dimensions} from 'react-native';
 
 const styles = StyleSheet.create({
   Main: {
-    flex: 1,
-    backgroundColor: 'black',
+    backgroundColor: "#000000",
+    flex:1
   },
   headerView: {
     backgroundColor:"#232020",height:50,flexDirection:'row',alignItems:"center"
@@ -14,8 +14,8 @@ const styles = StyleSheet.create({
   },
  
   CardView: {
-    height: 330,
-    width: 165,
+    height: Dimensions.get('window').height=300/1,
+    width: Dimensions.get('window').width=170/1,
     backgroundColor: '#232020',
     margin: 8,
     borderColor: 'gray',

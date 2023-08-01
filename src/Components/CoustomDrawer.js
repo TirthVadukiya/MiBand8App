@@ -44,7 +44,7 @@ function CustomDrawer({props, navigation}) {
 
   return (
     <DrawerContentScrollView
-      style={{backgroundColor: '#232020', flex: 1}}
+      style={{backgroundColor: 'transparent',  }}
       {...props}
       showsVerticalScrollIndicator={false}>
       {/* Profile Detail */}

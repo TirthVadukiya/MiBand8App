@@ -9,6 +9,7 @@ import {
   StatusBar,
   BackHandler,
   Alert,
+  SafeAreaView
 } from 'react-native';
 import React, {useEffect, useState, useRef} from 'react';
 import {
@@ -17,7 +18,7 @@ import {
   MenuOptions,
   MenuOption,
   MenuTrigger,
- } from "react-native-popup-menu";
+} from 'react-native-popup-menu';
 import styles from '.';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import database, {FirebaseDatabaseTypes} from '@react-native-firebase/database';
@@ -84,7 +85,14 @@ const Home = ({navigation}) => {
           <TouchableOpacity
             style={styles.WatchBtn}
             onPress={() => navigation.navigate('Details', {data: item})}>
-            <Text style={{textAlign:"center", color: 'white',fontFamily:"Poppins-Regular"}}>GET WATCH</Text>
+            <Text
+              style={{
+                textAlign: 'center',
+                color: 'white',
+                fontFamily: 'Poppins-Regular',
+              }}>
+              GET WATCH
+            </Text>
           </TouchableOpacity>
         </TouchableOpacity>
       </View>
@@ -92,32 +100,32 @@ const Home = ({navigation}) => {
   };
 
   return (
-    <View style={styles.Main}>
+    <SafeAreaView style={styles.Main}>
+      <StatusBar backgroundColor="black" barStyle="light-content" />
       {/* HeaderBar */}
 
       <View style={styles.headerView}>
         <TouchableOpacity onPress={() => navigation.openDrawer()}>
-        <Image source={require("../../../assets/Images/iconDrawer.png")} style={{resizeMode:"contain",height:20,}} />
+          <Image
+            source={require('../../../assets/Images/iconDrawer.png')}
+            style={{resizeMode: 'contain', height: 20}}
+          />
         </TouchableOpacity>
         <Text style={styles.headerTxt}>Mi Band 8 Watch Faces</Text>
-      
       </View>
-
-      <StatusBar backgroundColor="black" barStyle="light-content" />
 
       {data.length > 0 ? (
         <FlatList
           numColumns={2}
           data={data}
           renderItem={renderItem}
+          scrollEnabled={true}
           keyExtractor={(item, index) => String(index)}
           showsVerticalScrollIndicator={false}
         />
       ) : null}
-    </View>
+    </SafeAreaView>
   );
 };
 
 export default Home;
-
-
