@@ -44,12 +44,14 @@ function CustomDrawer({props, navigation}) {
 
   return (
     <DrawerContentScrollView
-      style={{backgroundColor: 'transparent',  }}
+      style={{backgroundColor: 'black',  }}
       {...props}
-      showsVerticalScrollIndicator={false}>
+      showsVerticalScrollIndicator={false}
+      options={{animation: 'slide_from_right'}}
+      >
       {/* Profile Detail */}
 
-      <View style={{marginTop: 20}}>
+      <View style={{marginTop: 20,alignItems:"center"}}>
         <Image
           source={require('../../assets/Images/MiBand.png')}
           style={styles.WatchImg}
@@ -62,11 +64,12 @@ function CustomDrawer({props, navigation}) {
           width: '83%',
           backgroundColor: '#f5f5f5',
           margin: 20,
+          right:6
         }}></View>
 
       {/* DrawerTabScreen */}
 
-      <View style={{padding: 18, flex: 1}}>
+      <View style={{padding: 20, flex: 1,left:15}}>
         <TouchableOpacity style={styles.BtnView} onPress={onShare}>
           <Icon name={'share-social'} size={20} color={'white'} />
           <Text style={styles.DrawerTxt}>Share App</Text>

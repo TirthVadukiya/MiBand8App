@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
  
   CardView: {
     height: Dimensions.get('window').height=300/1,
-    width: Dimensions.get('window').width=170/1,
+    width: Dimensions.get('window').width=165/1,
     backgroundColor: '#232020',
     margin: 8,
     borderColor: 'gray',
