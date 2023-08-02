@@ -47,9 +47,10 @@ const Home = ({navigation}) => {
     const fetchData = async () => {
       try {
         const snapshot = database()
-          .ref()
+          .ref().child('MiBand8')
           .once('value')
           .then(snapshot => {
+
             setData(snapshot.val());
             // console.warn(snapshot.val())
           });

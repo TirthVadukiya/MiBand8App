@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "630847485412",
-    "firebase_url": "https://watch-faces-77882-default-rtdb.firebaseio.com",
-    "project_id": "watch-faces-77882",
-    "storage_bucket": "watch-faces-77882.appspot.com"
+    "project_number": "374195997493",
+    "firebase_url": "https://haylou-watch-face-default-rtdb.firebaseio.com",
+    "project_id": "haylou-watch-face",
+    "storage_bucket": "haylou-watch-face.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:630847485412:android:7edf8ee13413b5fa1e43f1",
+        "mobilesdk_app_id": "1:374195997493:android:931f49432f9e3252df5a7c",
         "android_client_info": {
-          "package_name": "com.miwatcheight"
+          "package_name": "com.haylous"
         }
       },
       "oauth_client": [
         {
-          "client_id": "630847485412-mvktl8cn643nhhgt2f4ohefnvvdo0stm.apps.googleusercontent.com",
+          "client_id": "374195997493-fomb7n4el5e8fh81a8mfu5r3cb0605nf.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBljtOzqkYwUUP894vlU1_LiJTf7BlB8Vk"
+          "current_key": "AIzaSyC0xBDc4---RRLYwM2iPyNswdStpLEP9Kg"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "630847485412-mvktl8cn643nhhgt2f4ohefnvvdo0stm.apps.googleusercontent.com",
+              "client_id": "374195997493-fomb7n4el5e8fh81a8mfu5r3cb0605nf.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
@@ -37,27 +37,27 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:630847485412:android:7ad41c87df8911b61e43f1",
+        "mobilesdk_app_id": "1:374195997493:android:ec6f0f29ef125f33df5a7c",
         "android_client_info": {
-          "package_name": "com.watchfacesapp"
+          "package_name": "com.miwatcheight"
         }
       },
       "oauth_client": [
         {
-          "client_id": "630847485412-mvktl8cn643nhhgt2f4ohefnvvdo0stm.apps.googleusercontent.com",
+          "client_id": "374195997493-fomb7n4el5e8fh81a8mfu5r3cb0605nf.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBljtOzqkYwUUP894vlU1_LiJTf7BlB8Vk"
+          "current_key": "AIzaSyC0xBDc4---RRLYwM2iPyNswdStpLEP9Kg"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "630847485412-mvktl8cn643nhhgt2f4ohefnvvdo0stm.apps.googleusercontent.com",
+              "client_id": "374195997493-fomb7n4el5e8fh81a8mfu5r3cb0605nf.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
