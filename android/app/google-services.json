@@ -1,63 +1,34 @@
 {
   "project_info": {
-    "project_number": "374195997493",
-    "firebase_url": "https://haylou-watch-face-default-rtdb.firebaseio.com",
-    "project_id": "haylou-watch-face",
-    "storage_bucket": "haylou-watch-face.appspot.com"
+    "project_number": "500621673437",
+    "firebase_url": "https://all-watch-faces-default-rtdb.firebaseio.com",
+    "project_id": "all-watch-faces",
+    "storage_bucket": "all-watch-faces.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:374195997493:android:931f49432f9e3252df5a7c",
-        "android_client_info": {
-          "package_name": "com.haylous"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "374195997493-fomb7n4el5e8fh81a8mfu5r3cb0605nf.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyC0xBDc4---RRLYwM2iPyNswdStpLEP9Kg"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "374195997493-fomb7n4el5e8fh81a8mfu5r3cb0605nf.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:374195997493:android:ec6f0f29ef125f33df5a7c",
+        "mobilesdk_app_id": "1:500621673437:android:6c6ec1c6ae531752426c34",
         "android_client_info": {
           "package_name": "com.miwatcheight"
         }
       },
       "oauth_client": [
         {
-          "client_id": "374195997493-fomb7n4el5e8fh81a8mfu5r3cb0605nf.apps.googleusercontent.com",
+          "client_id": "500621673437-nfl6t621akds1kglsu45bq4rbb7nr3gc.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyC0xBDc4---RRLYwM2iPyNswdStpLEP9Kg"
+          "current_key": "AIzaSyAw2dZkx2_2hdN0R53mTIVTkJ6rL-axmhA"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "374195997493-fomb7n4el5e8fh81a8mfu5r3cb0605nf.apps.googleusercontent.com",
+              "client_id": "500621673437-nfl6t621akds1kglsu45bq4rbb7nr3gc.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
