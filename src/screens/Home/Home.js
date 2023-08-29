@@ -15,15 +15,21 @@ import React, {useEffect, useState, useRef} from 'react';
 import styles from '.';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import database, {FirebaseDatabaseTypes} from '@react-native-firebase/database';
+import  NetInfo  from '@react-native-community/netinfo';
+import NetworkUtils from '../../../NetworkUtills';
+import CustomDialogNetwork from '../../utils/CustomDialogNetwork';
+
 
 const Home = ({navigation}) => {
+
   const [data, setData] = useState([]);
+const isConnected = NetworkUtils();
   const flatListRef = useRef(null);
 
   useEffect(() => {
     const backAction = () => {
       if (navigation.isFocused()) {
-        Alert.alert('', 'Are you sure you want to exit?', [
+        Alert.alert('Are you sure you want to exit?', [
           {
             text: 'NO',
             onPress: () => null,
@@ -60,6 +66,9 @@ const Home = ({navigation}) => {
     };
     fetchData();
   }, [data]);
+
+
+
 
   const renderItem = ({item, index}) => {
     return (
@@ -118,6 +127,7 @@ const Home = ({navigation}) => {
           showsVerticalScrollIndicator={false}
         />
       ) : null}
+       {isConnected ? null : <CustomDialogNetwork visible={true} />}
     </SafeAreaView>
   );
 };
